@@ -1,6 +1,13 @@
 const skills = ["Html", "CSS", "JavaScript", "MySQL", "UI/UX Design"];
 const frameworks = ["React", "Bootstrap"];
-const tools = ["ChatGPT", "Gemini", "Claude", "Github Copilot", "Visual Studio Code", "Figma"];
+const tools = [
+  "ChatGPT",
+  "Gemini",
+  "Claude",
+  "Github Copilot",
+  "Visual Studio Code",
+  "Figma",
+];
 
 export default function PageAbout() {
   return (
@@ -8,15 +15,15 @@ export default function PageAbout() {
       <h2 className="section-title">About me</h2>
       <div className="section-line"></div>
 
-      <div className="about-grid">        
+      <div className="about-grid">
         <div className="avatar-circle">
-          <img src="public/S__110870531.jpg" alt="Avatar photo" />
+          <img src="/portfolio/S__110870531.jpg" alt="Avatar photo" />
         </div>
 
         <div>
           <p>
-            <strong>ตำแหน่งงานที่อยากสมัคร</strong> Frontend Developer,
-            Backend Developer, Fullstack Developer, Web Developer, UI/UX Designer
+            <strong>ตำแหน่งงานที่อยากสมัคร</strong> Frontend Developer, Backend
+            Developer, Fullstack Developer, Web Developer, UI/UX Designer
           </p>
           <p>
             <strong>จุดเด่น</strong> สามารถเรียนรู้การทำงานได้รวดเร็ว
@@ -26,27 +33,39 @@ export default function PageAbout() {
             <strong>จุดด้อย</strong> ยังไม่มีประสบการณ์ทำงานจริงในสายงานที่นี้
             แต่มีความตั้งใจและพร้อมเรียนรู้อย่างรวดเร็วเพื่อพัฒนาตัวเองให้เหมาะสมกับตำแหน่งงานที่สมัคร
           </p>
-          
+
           <div className="skills-grid">
-            <p><strong>Skill</strong></p>
+            <p>
+              <strong>Skill</strong>
+            </p>
             {skills.map((s) => (
-              <span key={s} className="skill-tag">{s}</span>
+              <span key={s} className="skill-tag">
+                {s}
+              </span>
             ))}
           </div>
 
           <div className="skills-grid">
-            <p><strong>Frameworks</strong></p>
+            <p>
+              <strong>Frameworks</strong>
+            </p>
             {frameworks.map((f) => (
-              <span key={f} className="skill-tag">{f}</span>
+              <span key={f} className="skill-tag">
+                {f}
+              </span>
             ))}
           </div>
 
           <div className="skills-grid">
-            <p><strong>Tools</strong></p>
+            <p>
+              <strong>Tools</strong>
+            </p>
             {tools.map((t) => (
-              <span key={t} className="skill-tag">{t}</span>
+              <span key={t} className="skill-tag">
+                {t}
+              </span>
             ))}
-          </div>          
+          </div>
         </div>
       </div>
 
